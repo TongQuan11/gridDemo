@@ -1,0 +1,33 @@
+.header{
+		grid-area: header;
+		background-color: red;
+}
+.menu{
+		grid-area: menu;
+		background-color: blue;
+}
+.content{
+        grid-area: conTent;
+        background-color: green;
+}
+.item4{
+        grid-area: mainBar;
+        background-color: aqua;
+ }
+.item5{
+        grid-area: footer;
+        background-color: yellow;
+ }
+.grid-container{
+display: grid;
+grid-template-areas:
+'header header header header'
+'mainBar mainBar mainBar mainBar'
+'menu conTent conTent conTent '
+'footer footer footer footer';
+grid-template-columns: 150px auto;
+}
+.grid-container> div{
+text-align: center;
+font-size: 30px;
+}
